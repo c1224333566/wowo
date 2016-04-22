@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>窝窝</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <link rel="alternate icon" type="image/png" href="assets/i/logo.png"><!--标签logo-->
+  <link rel="stylesheet" href="assets/css/amazeui.min.css"/>
+  <style>
+  		body{
+  			background-color: wheat;
+  		}
+			th{
+				width: 165px;
+				height: 165px;
+				border: 2px solid greenyellow;
+				
+			}
+			th.white{
+				width:40px;
+				border: none;
+			}
+    .footer p {
+      color: #7f8c8d;
+      margin: 0;
+      padding: 4px 0;
+      text-align: center;
+      background: #2d3e50;
+      font-size: 5px;
+    }
+    #login1{
+    	margin-top: 12px;
+    	margin-right: 5px;
+    }
+    #register1{
+    	margin-top: 12px;
+    	margin-right: 86px;
+    }
+    a.button{height:30px;width:50px;display:inline-block;}
+    a#login1{background-image: url(assets/i/login1.png);}
+    a#login1:active{background-image: url(assets/i/login2.png);}
+    a#register1{background-image: url(assets/i/register1.png);}
+    a#register1:active{background-image: url(assets/i/register2.png);}
+  </style>
+</head>
+<body>
+<header class="am-topbar am-topbar-fixed-top">
+  <div class="am-container">
+    <h1 class="am-topbar-brand">
+      <a href="index.html"><img src="assets/i/logo.png" width="40px" style="margin-left: -16px;"/></a>
+    </h1>
+
+    <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-secondary am-show-sm-only"
+            data-am-collapse="{target: '#collapse-head'}"><span class="am-sr-only">导航切换</span> <span
+        class="am-icon-bars"></span></button>
+
+    <div class="am-collapse am-topbar-collapse" id="collapse-head">
+      <ul class="am-nav am-nav-pills am-topbar-nav">
+        <li ><a href="index.html">首页</a></li>
+        <li class="am-active"><a href="schoolSideIndex.html">学院周边</a></li>
+        <li><a href="gezipu.html">格子铺</a></li>
+        <li><a href="livefree.html">生活闲置</a></li>
+        
+      </ul>
+
+      <div class="am-topbar-right" style="margin-right: -86px;">
+        <a href="register.html" class="button" id="register1"></a>
+      </div><!--注册按钮-->
+
+      <div class="am-topbar-right">
+        <a href="login.html" class="button" id="login1"></a>
+      </div><!--登陆按钮-->
+    </div>
+  </div>
+</header>
+
+
+    <div >
+    	<div style="margin: 0 auto;height: 740px;width: 1000px;padding: 20px;">
+    	<div style="height: 130px;width: 110px;border: 2px solid dodgerblue;display: inline;float: left;">商家头像</div>
+    	<div style="height: 130px;width: 840px;border: 2px solid dodgerblue;float: right;">
+    		<span>昵称：</span><br/><span>等级：</span><br/><span>好评度：</span><br/><span>店铺：</span><br/><span>主营：</span>
+    	</div>
+
+    	<div style="height: 550px;width: 700px;border: 2px solid dodgerblue;float: left;margin-top: 16px;padding: 17px;">
+    		<div style="background-color: orangered;width: 40px;height: 40px;display: inline;float: left;padding-left: 10px;padding-top: 8px;color: white;">食</div>
+    		<div style="background-color: hotpink;width: 40px;height: 40px;display: inline;float: left;padding-left: 10px;padding-top: 8px;color: white;">住</div>
+    		<div style="background-color: palevioletred;width: 40px;height: 40px;display: inline;float: left;padding-left: 10px;padding-top: 8px;color: white;">行</div>
+    		<div style="background-color: deepskyblue;width: 40px;height: 40px;display: inline;float: left;padding-left: 10px;padding-top: 8px;color: white;">游</div>
+    		<div style="background-color: greenyellow;width: 40px;height: 40px;display: inline;float: left;padding-left: 10px;padding-top: 8px;color: white;">购</div>
+    		<div style="background-color: green;width: 40px;height: 40px;display: inline;float: left;padding-left: 10px;padding-top: 8px;color: white;">娱</div>
+    		<div style="width: 280px;height:25px;margin-left: 62%;font-size: 16px;margin-top: 2px;">
+					<input type="text" name="search" id="search" value=""placeholder="输入你要搜索的商品" style="width: 70%;"/><img src="assets/i/search.png" />
+				</div><!--搜索框-->
+    		
+    		<div style="display: inline;width: 110px;height: 110px;float: left;margin-top: 43px;border: 2px solid dodgerblue;margin-left: -239px;">商品图片</div>
+    		<div style="display:inline;width: 540px;height: 110px;float: right;margin-top: 70px;border: 2px solid dodgerblue;margin-top: 30px;">
+    		<div>价格：</div>
+    		<div style="margin-top: 1px;">所属店铺：</div>
+    		<div style="margin-top: 1px;">简介：</div>
+    		<div style="margin-top: 1px;"></div>
+    		<div style="margin-top: 5pxs;>简介：</div>
+    		
+    		<div style="margin-top: 15px;><p><span>好评度：</span><span>交易量：</span><span>收藏：</span><span>评论：</span></p></div>
+    		</div>
+    		
+    		<div style="display: inline;width: 110px;height: 110px;float: left;margin-top: 172px;border: 2px solid dodgerblue;margin-left: -110px;">商品图片</div>
+    		<div style="display:inline;width: 540px;height: 110px;float: right;margin-top: 32px;border: 2px solid dodgerblue;">
+    			<div>价格：</div>
+    		<div style="margin-top: 1px;">所属店铺：</div>
+    		<div style="margin-top: 1px;">简介：</div>
+    		<div style="margin-top: 1px;"></div>
+    		<div style="margin-top: 5pxs;>简介：</div>
+    		
+    		<div style="margin-top: 15px;><p><span>好评度：</span><span>交易量：</span><span>收藏：</span><span>评论：</span></p></div>
+    		</div>
+    		
+    		<div style="display: inline;width: 110px;height: 110px;float: left;margin-top: 175px;border: 2px solid dodgerblue;margin-left: -110px;">商品图片</div>
+    		<div style="display:inline;width: 540px;height: 110px;float: right;margin-top: 32px;border: 2px solid dodgerblue;">
+    			<div>价格：</div>
+    		<div style="margin-top: 1px;">所属店铺：</div>
+    		<div style="margin-top: 1px;">简介：</div>
+    		<div style="margin-top: 1px;"></div>
+    		<div style="margin-top: 5pxs;>简介：</div>
+    		
+    		<div style="margin-top: 15px;margin-bottom: 15px;><p><span>好评度：</span><span>交易量：</span><span>收藏：</span><span>评论：</span></p></div>
+    		</div>
+    		<div style="height: 40px;"></div>
+    		<div style="margin-left: 32%;margin-top: 2%;position: relative;top: 16px;">
+				<img src="assets/i/lj.png"/><span style="margin-left: 10px;margin-right: 4px;">1</span>
+				<span style="margin-right: 4px;">2</span>
+				<span style="margin-right: 4px;">3</span>
+				<span style="margin-right: 4px;">......</span>
+				<span style="margin-right: 4px;">23</span>
+				<span style="margin-right: 4px;">24</span>
+				<span style="margin-right: 4px;">25</span>
+				<img src="assets/i/rj.png"/>
+			</div><!--分页栏目-->
+    		
+    		
+    	</div>
+    	<div style="height: 440px;width: 250px;border: 2px solid dodgerblue;float: right;margin-top: 16px;"></div>
+    	</div>
+    </div>
+
+
+
+
+<footer class="footer" style="width: 100%;margin-top: 0%;position: absolute;bottom: -14%;">
+      <p >友情链接：<a href="#">派睿工作室</a> | <a href="href="http://www.nsu.edu.cn" target="_blank"">成都东软学院</a> | <a href="#">成都东软教务系统</a> | <a href="#">微东软</a></p>
+	  <p>Adress：四川省成都市都江堰青城山镇东软大道1号  邮编 611844</p>
+	  <p>派睿科技提供技术支持 川ICP 备 06012610号</p>
+</footer>
+
+
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="assets/js/amazeui.min.js"></script>
+</body>
+</html>
+

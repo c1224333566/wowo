@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>窝窝</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <link rel="alternate icon" type="image/png" href="assets/i/logo.png"><!--标签logo-->
+  <link rel="stylesheet" href="assets/css/amazeui.min.css"/>
+  <style>
+  			body{
+  				background: url(assets/i/bg.gif) repeat scroll top left;
+  			}
+			th{
+				width: 225px;
+				height: 165px;
+				border: 2px solid greenyellow;
+				
+			}
+			th.white{
+				width:40px;
+				border: none;
+			}
+    .footer p {
+      color: #7f8c8d;
+      margin: 0;
+      padding: 4px 0;
+      text-align: center;
+      background: #2d3e50;
+      font-size: 5px;
+    }
+		#login1{
+    	margin-top: 12px;
+    	margin-right: 5px;
+    }
+    #register1{
+    	margin-top: 12px;
+    	margin-right: 86px;
+    }
+    a.button{height:30px;width:50px;display:inline-block;}
+    a#login1{background-image: url(assets/i/login1.png);}
+    a#login1:active{background-image: url(assets/i/login2.png);}
+    a#register1{background-image: url(assets/i/register1.png);}
+    a#register1:active{background-image: url(assets/i/register2.png);}
+    
+  </style>
+  <link rel="stylesheet" type="text/css" href="assets/css/test6.css"/>
+  <script src="assets/js/test6.js"></script>
+</head>
+<body style="overflow-x:hidden;overflow-y:scroll">
+<header class="am-topbar am-topbar-fixed-top">
+  <div class="am-container">
+    <h1 class="am-topbar-brand">
+      <a href="index.html"><img src="assets/i/logo.png" width="40px" style="margin-left: -26px;"/></a>
+    </h1>
+
+    <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-secondary am-show-sm-only"
+            data-am-collapse="{target: '#collapse-head'}"><span class="am-sr-only">导航切换</span> <span
+        class="am-icon-bars"></span></button>
+
+    <div class="am-collapse am-topbar-collapse" id="collapse-head" >
+      <ul class="am-nav am-nav-pills am-topbar-nav">
+        <li><a href="index.html">首页</a></li>
+        <li ><a href="schoolSideIndex.html">学院周边</a></li>
+        <li><a href="gezipu.html">格子铺</a></li>
+        <li class="am-active"><a href="livefree.html">生活闲置</a></li>
+        
+      </ul>
+
+      <div class="am-topbar-right" style="margin-right: -90px;">
+        <a href="register.html" class="button" id="register1"></a>
+      </div><!--注册按钮-->
+
+      <div class="am-topbar-right">
+        <a href="login.html" class="button" id="login1"></a>
+      </div><!--登陆按钮-->
+    </div>
+  </div>
+</header>
+			
+		<div style="height: 25px;"></div>	<!--空白-->
+		
+		<div style="width: 320px;height:25px;margin-left: 43%;font-size: 16px;">
+					<input type="text" name="search" id="search" value=""placeholder="输入你要搜索的店铺" style="width: 70%;"/><img src="assets/i/search.png" />
+				</div><!--搜索框-->
+		<div style="height: 25px;"></div>	<!--空白-->
+		
+		<div style="width: 980px;margin: 0 auto;border: 2px solid rgba(255,255,255,0) ;">
+			<div style="height: 350px;">
+				<div style="background-color: rgba(255,255,255,0);width: 784px;float: right;margin-top: 2px;margin-right: 2px;">
+									<div data-am-widget="slider" class="am-slider am-slider-c2" data-am-slider='{&quot;directionNav&quot;:false}' >
+  <ul class="am-slides">
+      <li>
+        	<img src="http://s.amazeui.org/media/i/demos/bing-1.jpg" height="360px"width="784px">
+          <div class="am-slider-desc">远方 有一个地方 那里种有我们的梦想</div>
+         
+      </li>
+      <li>
+        	<img src="http://s.amazeui.org/media/i/demos/bing-2.jpg" height="360px"width="784px">
+          <div class="am-slider-desc">某天 也许会相遇 相遇在这个好地方</div>
+         
+      </li>
+      <li>
+        	<img src="http://s.amazeui.org/media/i/demos/bing-3.jpg" height="360px"width="784px">
+          <div class="am-slider-desc">不要太担心 只因为我相信 终会走过这条遥远的道路</div>
+         
+      </li>
+      <li>
+        	<img src="http://s.amazeui.org/media/i/demos/bing-4.jpg" height="360px"width="784px">
+          <div class="am-slider-desc">OH PARA PARADISE 是否那么重要 你是否那么地遥远</div>
+         
+      </li>
+  </ul>
+</div>
+				</div>
+				
+				
+				<div style="">
+	<ul id="na" style="height: 360px;">   
+  <li id="vv" style="line-height:49px;">
+  	<img src="assets/i/livefree/shuma.png" style="display: inline-block;float: right;margin-right: 14px;margin-top: 14px;margin-left: 10px;"><a href="#shuma">闲置数码</a>
+  	
+    <ul>   
+            <li style="display: block;background-color: white;width: 400px;top: 1px;padding-left: 10px;">
+						 <span style="font-weight: bold;">手机：</span><span><a href="schoolSide/shopall.html">手机壳</a></span>&nbsp;&nbsp;<span><a href="#">充电器</a></span>&nbsp;&nbsp;<span><a href="#">电池</a></span>&nbsp;&nbsp;<span><a href="#">耳机&nbsp;&nbsp;<span><a href="#">数据线</a></span>
+	<br/><span style="font-weight: bold;">相机/摄影机：</span><span><a href="#">相机</a></span>&nbsp;&nbsp;<span><a href="#">镜头</a></span>&nbsp;&nbsp;<span><a href="#">单反</a></span>&nbsp;&nbsp;<span><a href="#">摄像</a></span>&nbsp;&nbsp;<span><a href="#">胶片</a></span>&nbsp;&nbsp;<span><a href="#">微单</a></span>
+	<br/><span style="font-weight: bold;">电脑：</span><span><a href="#">笔记本</a></span>&nbsp;&nbsp;<span><a href="#">平板电脑</a></span>&nbsp;&nbsp;<span><a href="#">台式整体机</a></span>&nbsp;&nbsp;<span><a href="#">显示器</a></span>&nbsp;&nbsp;<span><a href="#">鼠标</a></span>&nbsp;&nbsp;<span><a href="#">硬盘</a></span>&nbsp;&nbsp;<span><a href="#">电源</a></span>&nbsp;&nbsp;<span><a href="#">U盘</a></span>&nbsp;&nbsp;<span><a href="#">闪存卡</a></span>&nbsp;&nbsp;<span><a href="#">移动硬盘</a></span>
+	<br/><span style="font-weight: bold;">电玩随身：</span><span><a href="#">MP3</a></span>&nbsp;&nbsp;<span><a href="#">MP4</a></span>&nbsp;&nbsp;<span><a href="#">MP5</a></span>&nbsp;&nbsp;<span><a href="#">PS3</a></span>&nbsp;&nbsp;<span><a href="#">XBOX</a></span>&nbsp;&nbsp;<span><a href="#">游戏软件</a></span>&nbsp;&nbsp;<span><a href="#">录音笔</a></span>&nbsp;&nbsp;<span><a href="#">wii</a></span>&nbsp;&nbsp;<span><a href="#">PSP</a></span>
+	<br/><span style="font-weight: bold;">热门与品牌：</span><span><a href="#">苹果</a></span>&nbsp;&nbsp;<span><a href="#">诺基亚</a></span>&nbsp;&nbsp;<span><a href="#">HTC</a></span>&nbsp;&nbsp;<span><a href="#">三星</a></span>&nbsp;&nbsp;<span><a href="#">小米</a></span>&nbsp;&nbsp;<span><a href="#">华为</a></span>&nbsp;&nbsp;<span><a href="#">中兴</a></span>&nbsp;&nbsp;<span><a href="#">联想</a></span>&nbsp;&nbsp;<span><a href="#">索爱</a></span>&nbsp;&nbsp;<span><a href="#">LG</a></span>&nbsp;&nbsp;<span><a href="#">佳能</a></span>&nbsp;&nbsp;<span><a href="#">尼康</a></span>&nbsp;&nbsp;<span><a href="#">索尼</a></span>&nbsp;&nbsp;<span><a href="#">宾得</a></span>&nbsp;&nbsp;<span><a href="#">松下</a></span>&nbsp;&nbsp;<span><a href="#">富士</a></span>&nbsp;&nbsp;<span><a href="#">三星</a></span>&nbsp;&nbsp;<span><a href="#">奥林巴斯</a></span>&nbsp;&nbsp;<span><a href="#">适马</a></span>&nbsp;&nbsp;<span><a href="#">徕卡</a></span>&nbsp;&nbsp;<span><a href="#">明基</a></span>&nbsp;&nbsp;<span><a href="#">爱国者</a></span>
+	<br/><span style="font-weight: bold;">其他闲置</span>
+						</li>
+    </ul>   
+  </li>
+    <li id="vv" style="line-height:49px;">
+  	<img src="assets/i/livefree/jiaju.png" style="display: inline-block;float: right;margin-right: 13px;margin-top: 16px;margin-left: 7px;"><a href="#jiaju">家具日用</a>   
+    <ul>   
+            <li style="display: block;background-color: white;width: 400px;top: 1px;padding-left: 10px;">
+            	<span style="font-weight: bold;">家具：</span><span><a href="schoolSide/shopall.html">床</a></span>&nbsp;&nbsp;<span><a href="#">沙发</a></span>&nbsp;&nbsp;<span><a href="#">茶几</a></span>&nbsp;&nbsp;<span><a href="#">餐桌</a></span>&nbsp;&nbsp;<span><a href="#">椅子</a></span>&nbsp;&nbsp;<span><a href="#">衣柜</a></span>&nbsp;&nbsp;<span><a href="#">鞋柜</a></span>&nbsp;&nbsp;<span><a href="#">床头柜</a></span>&nbsp;&nbsp;<span><a href="#">置物架</a></span>&nbsp;&nbsp;<span><a href="#">鞋架</a></span>&nbsp;&nbsp;<span><a href="#">书架</a></span>
+	<br/><span style="font-weight: bold;">家纺家饰：</span><span><a href="#">四件套</a></span>&nbsp;&nbsp;<span><a href="#">枕头</a></span>&nbsp;&nbsp;<span><a href="#">床单</a></span>&nbsp;&nbsp;<span><a href="#">被套</a></span>&nbsp;&nbsp;<span><a href="#">被子</a></span>&nbsp;&nbsp;<span><a href="#">窗帘</a></span>&nbsp;&nbsp;<span><a href="#">地毯</a></span>&nbsp;&nbsp;<span><a href="#">地垫</a></span>&nbsp;&nbsp;<span><a href="#">靠垫</a></span>&nbsp;&nbsp;<span><a href="#">桌布</a></span>
+	<br/><span style="font-weight: bold;">日用日化：</span><span><a href="#">毛巾</a></span>&nbsp;&nbsp;<span><a href="#">洗衣液</a></span>&nbsp;&nbsp;<span><a href="#">洗衣粉</a></span>&nbsp;&nbsp;<span><a href="#">伞</a></span>&nbsp;&nbsp;<span><a href="#">雨衣</a></span>&nbsp;&nbsp;<span><a href="#">垃圾桶</a></span>
+	<br/><span style="font-weight: bold;">家装建材：</span><span><a href="#">台灯</a></span>&nbsp;&nbsp;<span><a href="#">壁灯</a></span>&nbsp;&nbsp;<span><a href="#">落地灯</a></span>&nbsp;&nbsp;<span><a href="#">地板</a></span>&nbsp;&nbsp;<span><a href="#">马桶</a></span>&nbsp;&nbsp;<span><a href="#">其他</a></span>
+	<br/><span style="font-weight: bold;">热门与品牌：</span><span><a href="#">沙发床</a></span>&nbsp;&nbsp;<span><a href="#">懒人床</a></span>&nbsp;&nbsp;<span><a href="#">衣柜</a></span>&nbsp;&nbsp;<span><a href="#">电视柜</a></span>&nbsp;&nbsp;<span><a href="#">书柜</a></span>&nbsp;&nbsp;<span><a href="#">鞋柜</a></span>&nbsp;&nbsp;<span><a href="#">置物架     罗莱</a></span>&nbsp;&nbsp;<span><a href="#">多喜爱</a></span>&nbsp;&nbsp;<span><a href="#">富安娜</a></span>&nbsp;&nbsp;<span><a href="#">博洋</a></span>&nbsp;&nbsp;<span><a href="#">梦洁</a></span>&nbsp;&nbsp;<span><a href="#">长相知</a></span>&nbsp;&nbsp;<span><a href="#">紫罗兰</a></span>
+            </li>
+    </ul>   
+  </li>
+    <li id="vv" style="line-height:49px;">
+  	<img src="assets/i/livefree/yingshi.png" style="display: inline-block;float: right;margin-right: 14px;margin-top: 15px;margin-left: 7px;"><a href="#yingyin">影音家电</a>   
+    <ul>   
+            <li style="display: block;background-color: white;width: 400px;top: 1px;padding-left: 10px;">
+            	<span style="font-weight: bold;">大家电：</span><span><a href="schoolSide/shopall.html">电视机</a></span>&nbsp;&nbsp;<span><a href="#">洗衣机</a></span>&nbsp;&nbsp;<span><a href="#">冰箱</a></span>&nbsp;&nbsp;<span><a href="#">热水器</a></span>
+	<br/><span style="font-weight: bold;">生活小家电：</span><span><a href="#">吹风机</a></span>&nbsp;&nbsp;<span><a href="#">剃须刀</a></span>&nbsp;&nbsp;<span><a href="#">风扇</a></span>&nbsp;&nbsp;<span><a href="#">加湿器</a></span>&nbsp;&nbsp;<span><a href="#">挂烫机</a></span>
+	<br/><span style="font-weight: bold;">厨房电器：</span><span><a href="#">豆浆机</a></span>&nbsp;&nbsp;<span><a href="#">榨汁机</a></span>&nbsp;&nbsp;<span><a href="#">酸奶机</a></span>&nbsp;&nbsp;<span><a href="#">面包机</a></span>&nbsp;&nbsp;<span><a href="#">冰淇淋机</a></span>&nbsp;&nbsp;<span><a href="#">电饭煲</a></span>&nbsp;&nbsp;<span><a href="#">电炖锅</a></span>
+	<br/><span style="font-weight: bold;">影音/耳机/HiFi：</span><span><a href="#">耳机</a></span>&nbsp;&nbsp;<span><a href="#">音箱</a></span>&nbsp;&nbsp;<span><a href="#">功放</a></span>&nbsp;&nbsp;<span><a href="#">低音炮</a></span>&nbsp;&nbsp;<span><a href="#">麦克风</a></span>&nbsp;&nbsp;<span><a href="#">播放器</a></span>&nbsp;&nbsp;<span><a href="#">DVD</a></span>&nbsp;&nbsp;<span><a href="#">收音机</a></span>
+	<br/><span style="font-weight: bold;">热门与品牌：</span><span><a href="#">海信</a></span>&nbsp;&nbsp;<span><a href="#">创维</a></span>&nbsp;&nbsp;<span><a href="#">格力</a></span>&nbsp;&nbsp;<span><a href="#">西门子</a></span>&nbsp;&nbsp;<span><a href="#">美的</a></span>&nbsp;&nbsp;<span><a href="#">夏普&nbsp;&nbspLG;</a></span>&nbsp;&nbsp;<span><a href="#">容声</a></span>&nbsp;&nbsp;<span><a href="#">帅康</a></span>&nbsp;&nbsp;<span><a href="#">老板</a></span>&nbsp;&nbsp;<span><a href="#">方太</a></span>&nbsp;&nbsp;<span><a href="#">康宝</a></span>
+ 						</li>
+    </ul>   
+  </li> 
+  <li id="vv" style="line-height:49px;">
+  	<img src="assets/i/livefree/fuzhuang.png" style="display: inline-block;float: right;margin-right: 12px;margin-top: 17px;margin-left: 7px;"><a href="#xiefu">鞋服配饰</a>   
+    <ul>   
+            <li  style="display: block;background-color: white;width: 400px;top: 1px;padding-left: 10px;">
+            	<span style="font-weight: bold;">女装：</span><span><a href="schoolSide/shopall.html">连衣裙</a></span>&nbsp;&nbsp;<span><a href="#">半身裙</a></span>&nbsp;&nbsp;<span><a href="#">T恤</a></span>&nbsp;&nbsp;<span><a href="#">衬衫</a></span>&nbsp;&nbsp;<span><a href="#">卫衣</a></span>
+	<br/><span style="font-weight: bold;">女鞋：</span><span><a href="#">运动鞋</a></span>&nbsp;&nbsp;<span><a href="#">单鞋</a></span>&nbsp;&nbsp;<span><a href="#">皮鞋</a></span>&nbsp;&nbsp;<span><a href="#">帆布鞋</a></span>&nbsp;&nbsp;<span><a href="#">凉鞋/拖鞋</a></span>
+	<br/><span style="font-weight: bold;">箱包：</span><span><a href="#">女包</a></span>&nbsp;&nbsp;<span><a href="#">男包</a></span>&nbsp;&nbsp;<span><a href="#">旅行箱</a></span>
+	<br/><span style="font-weight: bold;">配饰：</span><span><a href="#">腰带</a></span>&nbsp;&nbsp;<span><a href="#">皮带</a></span>&nbsp;&nbsp;<span><a href="#">帽子</a></span>&nbsp;&nbsp;<span><a href="#">围巾</a></span>&nbsp;&nbsp;<span><a href="#">丝巾</a></span>&nbsp;&nbsp;<span><a href="#">手套</a></span>
+	<br/><span style="font-weight: bold;">热门与品牌：</span><span><a href="#">韩版</a></span>&nbsp;&nbsp;<span><a href="#">欧美</a></span>&nbsp;&nbsp;<span><a href="#">修身</a></span>&nbsp;&nbsp;<span><a href="#">宽松</a></span>&nbsp;&nbsp;<span><a href="#">雪纺</a></span>&nbsp;&nbsp;<span><a href="#">蕾丝</a></span>&nbsp;&nbsp;<span><a href="#">牛仔</a></span>
+            </li>
+    </ul>   
+  </li> 
+  <li id="vv" style="line-height:49px;">
+  	<img src="assets/i/livefree/shoucang.png" style="display: inline-block;float: right;margin-right: 13px;margin-top: 17px;margin-left: 7px;"><a href="#shop">珠宝收藏</a>   
+    <ul>   
+            <li  style="display: block;background-color: white;width: 400px;top: 1px;padding-left: 10px;">
+            	
+            <span style="font-weight: bold;">珠宝：</span><span><a href="schoolSide/shopall.html">翡翠</a></span>&nbsp;&nbsp;<span><a href="#">黄金</a></span>&nbsp;&nbsp;<span><a href="#">钻石</a></span>&nbsp;&nbsp;<span><a href="#">珍珠</a></span>&nbsp;&nbsp;<span><a href="#">碧玺</a></span>&nbsp;&nbsp;<span><a href="#">铂金</a></span>&nbsp;&nbsp;<span><a href="#">琥珀</a></span>
+	<br/><span style="font-weight: bold;">手表：</span><span><a href="#">机械表</a></span>&nbsp;&nbsp;<span><a href="#">石英表</a></span>&nbsp;&nbsp;<span><a href="#">电子表</a></span>
+	<br/><span style="font-weight: bold;">饰品：</span><span><a href="#">眼睛</a></span>&nbsp;&nbsp;<span><a href="#">手链</a></span>&nbsp;&nbsp;<span><a href="#">项链</a></span>&nbsp;&nbsp;<span><a href="#">吊坠</a></span>&nbsp;&nbsp;<span><a href="#">手镯</a></span>&nbsp;&nbsp;<span><a href="#">戒指</a></span>&nbsp;&nbsp;<span><a href="#">水晶</a></span>
+	<br/><span style="font-weight: bold;">收藏品：</span><span><a href="#">古玩</a></span>&nbsp;&nbsp;<span><a href="#">邮票</a></span>&nbsp;&nbsp;<span><a href="#">钱币</a></span>&nbsp;&nbsp;<span><a href="#">和田玉</a></span>&nbsp;&nbsp;<span><a href="#">古玉</a></span>&nbsp;&nbsp;<span><a href="#">陶瓷</a></span>
+	<br/><span style="font-weight: bold;">热门与品牌：</span><span><a href="#">印章</a></span>&nbsp;&nbsp;<span><a href="#">古董</a></span>&nbsp;&nbsp;<span><a href="#">书法</a></span>&nbsp;&nbsp;<span><a href="#">油画</a></span>&nbsp;&nbsp;<span><a href="#">精工</a></span>&nbsp;&nbsp;<span><a href="#">卡西欧</a></span>&nbsp;&nbsp;<span><a href="#">浪琴</a></span>&nbsp;&nbsp;<span><a href="#">梅花</a></span>
+            </li>  
+             
+    </ul>   
+  </li> 
+  <li id="vv" style="line-height:49px;">
+  	<img src="assets/i/livefree/xuexi.png" style="display: inline-block;float: right;margin-right: 13px;margin-top: 22px;margin-left: 7px;"><a href="#blife">日常学习</a>   
+    <ul>   
+            <li style="display: block;background-color: white;width: 400px;top: 1px;padding-left: 10px;">
+            	  
+             <span><a href="schoolSide/shopall.html">数学</a></span>&nbsp;&nbsp;<span><a href="#"><span><a href="#">英语</a></span>&nbsp;&nbsp;<span><a href="#"><span><a href="#">考研</a></span>&nbsp;&nbsp;<span><a href="#"><span><a href="#">编程</a></span>&nbsp;&nbsp;<span><a href="#"><span><a href="#">经济</a></span></li>
+             
+             
+    </ul>   
+  </li> 
+
+
+</ul>   
+   
+		
+</div>
+				
+				
+			</div>
+			
+			
+			<!--导航栏-->
+			
+			<div style="height: 60px;" id="food"></div>	<!--空白-->
+			<div style="width: 980px;">
+				<div style="height: 800px;margin: 0 auto;">
+				<div style="background-color: #ffef1f;height: 60px;width: 980px;margin-top: -3.6%;">
+					<a href="schoolSide/foodall.html"><div style="width: 35px;height:35px;margin: 10px;display: inline;float: left;">
+						<img src="assets/i/livefree/shuma.png" />
+					</div></a>
+					
+					<div style="display: inline;float: left;margin-top: 10px;" >闲置数码</div>
+					<a href="schoolSide/foodall.html" style="color: white;"><div style="display: inline;float: right;margin: 10px;">
+						全部
+					</div></a>
+					<a href="schoolSide/foodall.html" style="color: white;"><div style="display: inline;float: right;margin: 10px;">
+						笔记本
+					</div></a>
+					<a href="schoolSide/foodall.html" style="color: white;"><div style="display: inline;float: right;margin: 10px;">
+						单反
+					</div></a>
+					<a href="schoolSide/foodall.html" style="color: white;"><div style="display: inline;float: right;margin: 10px;">
+						苹果
+					</div></a>
+					</div>
+					<div >
+						<table style="width: 980px;border: 1px solid orangered;">
+							<tr>
+								<th width="265px" height="265px" bordercolor="black">
+									<a href="schoolSide/food.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p>
+									
+								</th>
+								<th width="265px" height="265px" bordercolor="black">
+									<a href="schoolSide/food.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p>
+								</th>
+								<th width="265px" height="265px" bordercolor="black">
+									<a href="schoolSide/food.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p>
+								</th>
+								<th width="265px" height="265px" bordercolor="black">
+									<a href="schoolSide/food.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p>
+								</th>
+							</tr>
+						</table>
+						<table style="width: 980px;border: 1px solid orangered;">
+							<tr>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/food.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/food.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/food.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/food.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+							</tr>
+						</table>
+						<table style="width: 980px;border: 1px solid orangered;">
+							<tr>
+								<th width="265px" height="265px" bordercolor="black">
+									<a href="schoolSide/food.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p>
+								</th>
+								<th width="265px" height="265px" bordercolor="black">
+									<a href="schoolSide/food.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p>
+								</th>
+								<th width="265px" height="265px" bordercolor="black">
+									<a href="schoolSide/food.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p>
+								</th>
+								<th width="265px" height="265px" bordercolor="black">
+									<a href="schoolSide/food.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p>
+								</th>
+							</tr>
+						</table>
+						
+					</div><!--周边美食-->
+					<div id="play" style="height: 40px;"></div>
+					<div style="background-color: #ffef1f;height: 60px;width: 980px;margin-top: -4%;">
+					<a href="schoolSide/playall.html"><div style="width: 35px;height:35px;margin: 10px;display: inline;float: left;">
+						<img src="assets/i/livefree/jiaju.png" />
+					</div></a>
+					
+					<div style="display: inline;float: left;margin-top: 10px;" >家具日用</div>
+					<a href="schoolSide/playall.html" style="color: white;"><div style="display: inline;float: right;margin: 10px;">
+						全部
+					</div></a>
+					<a href="schoolSide/playall.html" style="color: white;"><div style="display: inline;float: right;margin: 10px;">
+						沙发床
+					</div></a>
+					<a href="schoolSide/playall.html" style="color: white;"><div style="display: inline;float: right;margin: 10px;">
+						台灯
+					</div></a>
+					<a href="schoolSide/playall.html" style="color: white;"><div style="display: inline;float: right;margin: 10px;">
+						餐桌
+					</div></a>
+					</div>
+					<div >
+						<table style="width: 980px;border: 1px solid orangered;">
+							<tr>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/play.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/play.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/play.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/play.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+							</tr>
+						</table>
+						<table style="width: 980px;border: 1px solid orangered;">
+							<tr>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/play.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/play.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/play.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/play.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+							</tr>
+						</table>
+						<table style="width: 980px;border: 1px solid orangered;">
+							<tr>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/play.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/play.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/play.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/play.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+							</tr>
+						</table>
+						
+					</div><!--休闲娱乐-->
+					<div id="visit" style="height: 40px;"></div>
+					<div style="background-color: #ffef1f;height: 60px;width: 980px;margin-top: -4.1%;">
+					<a href="schoolSide/visitall.html"><div style="width: 35px;height:35px;margin: 10px;display: inline;float: left;">
+						<img src="assets/i/livefree/yingshi.png" />
+					</div></a>
+					<div style="display: inline;float: left;margin-top: 10px;">影音家电</div>
+					<a href="schoolSide/visitall.html" style="color: white;"><div style="display: inline;float: right;margin: 10px;">
+						全部
+					</div></a>
+					<a href="schoolSide/visitall.html" style="color: white;"><div style="display: inline;float: right;margin: 10px;">
+						单车出租
+					</div></a>
+					<a href="schoolSide/visitall.html" style="color: white;"><div style="display: inline;float: right;margin: 10px;">
+						农家乐
+					</div></a>
+					<a href="schoolSide/visitall.html" style="color: white;"><div style="display: inline;float: right;margin: 10px;">
+						景点
+					</div></a>
+					</div>
+					<div >
+						<table style="width: 980px;border: 1px solid orangered;">
+							<tr>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/visit.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/visit.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/visit.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/visit.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+							</tr>
+						</table>
+						<table style="width: 980px;border: 1px solid orangered;">
+							<tr>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/visit.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/visit.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/visit.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/visit.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+							</tr>
+						</table>
+						<table style="width: 980px;border: 1px solid orangered;">
+							<tr>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/visit.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/visit.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/visit.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/visit.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+							</tr>
+						</table>
+						
+					</div><!--周边游-->
+					<div id="home" style="height: 40px;"></div>
+					<div style="background-color: #ffef1f;height: 60px;width: 980px;margin-top: -4.1%;">
+					<a href="schoolSide/homeall.html"><div style="width: 35px;height:35px;margin: 10px;display: inline;float: left;">
+						<img src="assets/i/livefree/fuzhuang.png" />
+					</div></a>
+					<div style="display: inline;float: left;margin-top: 10px;">鞋服配饰</div>
+					<a href="schoolSide/homeall.html" style="color: white;"><div style="display: inline;float: right;margin: 10px;">
+						全部
+					</div></a>
+					<a href="schoolSide/homeall.html" style="color: white;"><div style="display: inline;float: right;margin: 10px;">
+						连衣裙
+					</div></a>
+					<a href="schoolSide/homeall.html" style="color: white;"><div style="display: inline;float: right;margin: 10px;">
+						旅行箱
+					</div></a>
+					<a href="schoolSide/homeall.html" style="color: white;"><div style="display: inline;float: right;margin: 10px;">
+						客栈
+					</div></a>
+					</div>
+					<div >
+						<table style="width: 980px;border: 1px solid orangered;">
+							<tr>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/home.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/home.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/home.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/home.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+							</tr>
+						</table>
+						<table style="width: 980px;border: 1px solid orangered;">
+							<tr>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/home.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/home.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/home.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/home.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+							</tr>
+						</table>
+						<table style="width: 980px;border: 1px solid orangered;">
+							<tr>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/home.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/home.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/home.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/home.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+							</tr>
+						</table>
+						
+					</div><!--客栈-->
+					<div id="service" style="height: 40px;"></div>
+					<div style="background-color: #ffef1f;height: 60px;width: 980px;margin-top: -4.1%;">
+					<a href="schoolSide/serviceall.html"><div style="width: 35px;height:35px;margin: 10px;display: inline;float: left;">
+						<img src="assets/i/livefree/shoucang.png" />
+					</div></a>
+					<div style="display: inline;float: left;margin-top: 10px;">珠宝收藏</div>
+					<a href="schoolSide/serviceall.html" style="color: white;"><div style="display: inline;float: right;margin: 10px;">
+						全部
+					</div></a>
+					<a href="schoolSide/homeall.html" style="color: white;"><div style="display: inline;float: right;margin: 10px;">
+						翡翠
+					</div></a>
+					<a href="schoolSide/homeall.html" style="color: white;"><div style="display: inline;float: right;margin: 10px;">
+						机械表
+					</div></a>
+					<a href="schoolSide/homeall.html" style="color: white;"><div style="display: inline;float: right;margin: 10px;">
+						项链
+					</div></a>
+					</div>
+					<div >
+						<table style="width: 980px;border: 1px solid orangered;">
+							<tr>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/service.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/service.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/service.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/service.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+							</tr>
+						</table>
+						<table style="width: 980px;border: 1px solid orangered;">
+							<tr>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/service.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/service.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/service.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/service.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+							</tr>
+						</table>
+						<table style="width: 980px;border: 1px solid orangered;">
+							<tr>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/service.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/service.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/service.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/service.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+							</tr>
+						</table>
+						
+					</div><!--生活服务-->
+					
+					<div id="blife" style="height: 40px;"></div>
+					<div style="background-color: #ffef1f;height: 60px;width: 980px;margin-top: -4.1%;">
+					<a href="schoolSide/blifeall.html"><div style="width: 35px;height:35px;margin: 10px;display: inline;float: left;">
+						<img src="assets/i/livefree/xuexi.png" />
+					</div></a>
+					<div style="display: inline;float: left;margin-top: 10px;">日常学习</div>
+					<a href="schoolSide/blifeall.html" style="color: white;"><div style="display: inline;float: right;margin: 10px;">
+						全部
+					</div></a>
+					<a href="schoolSide/blifeall.html" style="color: white;"><div style="display: inline;float: right;margin: 10px;">
+						数学
+					</div></a>
+					<a href="schoolSide/blifeall.html" style="color: white;"><div style="display: inline;float: right;margin: 10px;">
+						英语
+					</div></a>
+					<a href="schoolSide/blifeall.html" style="color: white;"><div style="display: inline;float: right;margin: 10px;">
+						考研
+					</div></a>
+					</div>
+					<div >
+						<table style="width: 980px;border: 1px solid orangered;">
+							<tr>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/blife.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/blife.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/blife.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/blife.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+							</tr>
+						</table>
+						<table style="width: 980px;border: 1px solid orangered;">
+							<tr>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/blife.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/blife.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/blife.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/blife.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+							</tr>
+						</table>
+						<table style="width: 980px;border: 1px solid orangered;">
+							<tr>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/blife.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/blife.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/blife.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+								<th width="265px" height="265px" bordercolor="black"><a href="schoolSide/blife.html"><div style="width:200px ;height: 120px;background: grey;margin-left: 20px;margin-top: 10px;">
+										<p style="color: white;">商品图片</p>
+									</div></a>
+									<p style="color: #333333;font-size: 8px;margin-top: 4px;margin-left: 20px;">商品名：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">商品简介：</p>
+									<p style="color: #333333;font-size: 8px;margin-top: -18px;margin-left: 20px;">价格：</p></th>
+							</tr>
+						</table>
+						
+					</div><!--靓人生活-->
+			</div>
+								
+			
+    </div><!--内容部分-->
+
+
+
+
+
+<footer class="footer" style="width: 200%;margin-top: 3810px;margin-left: -50%;">
+      <p >友情链接：<a href="#">派睿工作室</a> | <a href="href="http://www.nsu.edu.cn" target="_blank"">成都东软学院</a> | <a href="#">成都东软教务系统</a> | <a href="#">微东软</a></p>
+	  <p>Adress：四川省成都市都江堰青城山镇东软大道1号  邮编 611844</p>
+	  <p>派睿科技提供技术支持 川ICP 备 06012610号</p>
+</footer>
+
+
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="assets/js/amazeui.min.js"></script>
+</body>
+</html>
+
+

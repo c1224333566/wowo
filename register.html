@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>窝窝</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <link rel="alternate icon" type="image/png" href="assets/i/logo.png"><!--标签logo-->
+  <link rel="stylesheet" href="assets/css/amazeui.min.css"/>
+  <link rel="stylesheet" href="assets/css/login/register.css" />
+</head>
+
+<header class="am-topbar am-topbar-fixed-top" >
+  <div class="am-container">
+    <h1 class="am-topbar-brand">
+      <a href="index.html"><img src="assets/i/logo.png" width="40px"/></a>
+    </h1>
+
+    <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-secondary am-show-sm-only"
+            data-am-collapse="{target: '#collapse-head'}"><span class="am-sr-only">导航切换</span> <span
+        class="am-icon-bars"></span></button>
+
+    <div class="am-collapse am-topbar-collapse" id="collapse-head">
+      <ul class="am-nav am-nav-pills am-topbar-nav">
+        <li ><a href="index.html">首页</a></li>
+        <li class="am-active"><a href="schoolSideIndex.html">学院周边</a></li>
+        <li><a href="gezipu.html">格子铺</a></li>
+        <li><a href="livefree.html">生活闲置</a></li>
+        
+        
+      </ul>
+
+      <div class="am-topbar-right" style="margin-right: -80px;">
+        <a href="register.html" class="button" id="register1"></a>
+      </div><!--注册按钮-->
+
+      <div class="am-topbar-right">
+        <a href="login.html" class="button" id="login1"></a>
+      </div><!--登陆按钮-->
+    </div>
+  </div>
+</header>
+
+
+
+			
+		<div style="height: 25px;"></div>	<!--空白-->
+								
+								<div style="height: 60px;width: 940px;"></div><!--空行-->
+								<div style="width: 940px;margin:0 auto;">
+									<p style="display: inline;float: right;font-size: 8px;top: 145px;left:60%;position: absolute;">欢迎注册东软小窝帐号，如果您已拥有帐号，可点此<a style="color: orangered;"href="login.html">登录</a></p>
+								<div style="width: 940px;height: 40px;float: left;background-color: dodgerblue;">
+								<div class="am-tabs" data-am-tabs>
+  <ul class="am-tabs-nav am-nav am-nav-tabs">
+    <li class="am-active"><a href="#tab1" style="color: black;">学生注册</a></li>
+    <li><a href="#tab2" style="color: black;">商家注册</a></li>
+  </ul>
+
+  <div class="am-tabs-bd">
+    <div class="am-tab-panel am-fade am-in am-active" id="tab1" >
+      
+      <div style="background-color: rgba(255,255,255,0.2);height: 400px;padding-top: 30px;">
+      		<form action="" method="post" style="margin-left: 32%;">
+				<div id="title">
+					<label for="name" class="title">姓名：</label>
+					<input type="text" name="name" id="name" />
+					<div style="display: inline;"id="name1"></div><!--判断状态-->
+				</div>
+				<div id="title">
+					<label for="nickName" class="title">用户名：</label>
+					<input type="text" name="nickName" id="nickName" />
+					<div style="display: inline;"id="nickName1"></div><!--判断状态-->
+				</div>
+				<div id="title">
+					<label for="setPassword" class="title">设置密码：</label>
+					<input type="password" name="setPassword" id="setPassword" />
+					<div style="display: inline;"id="setPassword1"></div><!--判断状态-->
+				</div>
+				<div id="title">
+					<label for="checkPassword" class="title">确认密码：</label>
+					<input type="password" name="checkpassword" id="checkPassword" />
+					<div style="display: inline;"id="checkPassword1"></div><!--判断状态-->
+				</div>
+				<div id="title">
+					<label for="questionPassword" class="title">密保问题：</label>
+					<select name="questionPassword" id="questionPassword" style="display: inline;">
+						<option value="1">1、初中的学校名称是？</option>
+						<option value="2">2、最好的伙伴是？</option>
+						<option value="3">3、最爱的人是？</option>
+						<option value="4">4、父亲的姓名是？</option>
+						<option value="5">5、母亲的姓名是？</option>
+						<option value="6">6、所在企业名称？</option>
+						<option value="7">7、身份证后四位？</option>
+						<option value="8">8、我的大学辅导员？</option>
+						<option value="9">9、我高中的班主任？</option>							
+						<option value="10">10、我的爱好是？</option>
+					</select>
+					<div style="display: inline;"id="questionPassword1"></div><!--判断状态-->
+				</div>
+				<div id="title">
+					<label for="answerPassword" class="title">密保答案：</label>
+					<input type="text" name="answerPassword" id="answerPassword" />
+					<div style="display: inline;"id="answerPassword1"></div><!--判断状态-->
+				</div>
+				<div id="title">
+					<label for="phone" class="title">手机：</label>
+					<input type="text" name="phone" id="phone" />
+					<div style="display: inline;"id="phone1"></div><!--判断状态-->
+				</div>
+				<div id="title">
+					<label for="email" class="title">邮箱：</label>
+					<input type="text" name="email" id="email" />
+					<div style="display: inline;"id="email1"></div><!--判断状态-->
+				</div>
+				<div id="title">
+					<label for="verificationCode" class="title">验证码：</label>
+					<input type="text" name="verificationCode" id="verificationCade" style="width: 105px;display: inline-block;margin-top: -8px;"/>
+					<div style="display: inline-block;background-color: cornflowerblue;width: 60px;height:26px ;margin-left: 5px;position: relative;top: 5px;"></div>
+					<div style="display: inline;"id="verificationCode1"></div><!--判断状态-->
+				</div>
+				<div>
+				<a href="registerOK.html" style="color: white;"><input type="button" name="login" id="login" value="立即注册" style="background-color: orangered;color: white;margin-left: 21%;margin-top: 2%;"/></a>
+				</div>
+				
+			</form>
+      
+      </div>
+    </div>
+    <div class="am-tab-panel am-fade" id="tab2" >
+
+<div style="background-color: rgba(255,255,255,0.2);height: 400px;padding-top: 30px;">
+      	    <div style="display: inline-block;margin-left: 16%;float: left;margin-top: 1%;">
+    		<div style="border: 2px solid dodgerblue;height:100px;width: 140px;">营业执照正面</div>
+    		<div style="height: 20px;"></div>
+    		<div style="border: 2px solid dodgerblue;height: 100px;width: 140px;">营业执照背面</div>
+    		
+    		<input type="button"value="上传图片" style="margin-left: 2%;background-color: #00a2e9;"/>
+    	</div>
+<div style="margin-left: 48%;">
+	
+		<form action="" method="post">
+				<div id="title">
+					<label for="name" class="title" >姓名：</label>
+					<input type="text" name="name" id="name" />
+					<div style="display: inline;"id="name2"></div><!--判断状态-->
+				</div>
+				<div id="title">
+					<label for="nickName" class="title">用户名：</label>
+					<input type="text" name="nickName" id="nickName" />
+					<div style="display: inline;"id="nickName2"></div><!--判断状态-->
+				</div>
+				<div id="title">
+					<label for="setPassword" class="title">设置密码：</label>
+					<input type="password" name="setPassword" id="setPassword" />
+					<div style="display: inline;"id="setPassword2"></div><!--判断状态-->
+				</div>
+				<div id="title">
+					<label for="checkPassword" class="title">确认密码：</label>
+					<input type="password" name="checkpassword" id="checkPassword" />
+					<div style="display: inline;"id="checkpassword2"></div><!--判断状态-->
+				</div>
+				<div id="title">
+					<label for="questionPassword" class="title">密保问题：</label>
+					<select name="questionPassword" id="questionPassword" style="display: inline;">
+						<option value="1">1、初中的学校名称是？</option>
+						<option value="2">2、最好的伙伴是？</option>
+						<option value="3">3、最爱的人是？</option>
+						<option value="4">4、父亲的姓名是？</option>
+						<option value="5">5、母亲的姓名是？</option>
+						<option value="6">6、所在企业名称？</option>
+						<option value="7">7、身份证后四位？</option>
+						<option value="8">8、我的大学辅导员？</option>
+						<option value="9">9、我高中的班主任？</option>							
+						<option value="10">10、我的爱好是？</option>
+					</select>
+					<div style="display: inline;"id="questionPassword2"></div><!--判断状态-->
+				</div>
+				<div id="title">
+					<label for="answerPassword" class="title">密保答案：</label>
+					<input type="text" name="answerPassword" id="answerPassword" />
+					<div style="display: inline;"id="answerPassword2"></div><!--判断状态-->
+				</div>
+				<div id="title">
+					<label for="phone" class="title">手机：</label>
+					<input type="text" name="phone" id="phone" />
+					<div style="display: inline;"id="phone2"></div><!--判断状态-->
+				</div>
+				<div id="title">
+					<label for="email" class="title">邮箱：</label>
+					<input type="text" name="email" id="email" />
+					<div style="display: inline;"id="email2"></div><!--判断状态-->
+				</div>
+				<div id="title">
+					<label for="verificationCode" class="title">验证码：</label>
+					<input type="text" name="verificationCode" id="verificationCade" style="width: 105px;display: inline-block;margin-top: -8px;"/>
+					<div style="display: inline-block;background-color: cornflowerblue;width: 60px;height:26px ;margin-left: 5px;position: relative;top: 5px;"></div>
+					<div style="display: inline;"id="verificationCode2"></div><!--判断状态-->
+				</div>
+				<div>
+				<a href="registerOK.html" style="color: white;"><input type="button" name="login" id="login" value="立即注册" style="background-color: orangered;color: white;margin-left: -14%;margin-top: 2%;"/></a>
+				</div>
+				
+			</form>
+</div>
+
+      
+      
+     </div> 
+    </div>
+
+								
+			
+    </div><!--内容部分-->
+
+
+
+<div>
+<div style="height: 20%;"></div>
+<footer class="footer" style="width: 100%;margin-top: 20%;position: absolute;left: 0;">
+      
+	  
+	  <p>友情链接：<a href="#">派睿工作室</a> | <a href="href="http://www.nsu.edu.cn" target="_blank"">成都东软学院</a> | <a href="#">成都东软教务系统</a> | <a href="#">微东软</a></p>
+	  <p>Adress：四川省成都市都江堰青城山镇东软大道1号  邮编 611844</p>
+	  <p>派睿科技提供技术支持 川ICP 备 06012610号</p>
+</footer>
+
+<script>
+var a='ture';
+if(a=='ture')
+	document.getElementById('name1').innerText='ture';
+
+</script>
+
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="assets/js/amazeui.min.js"></script>
+</body>
+</html>
+
+

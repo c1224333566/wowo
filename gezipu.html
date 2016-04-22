@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>格子铺</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <link rel="alternate icon" type="image/png" href="assets/i/logo.png"><!--标签logo-->
+  <link rel="stylesheet" href="assets/css/amazeui.min.css"/>
+  <style>
+  		body{ margin:0; padding:0;
+  		position:absolute; 
+top:0; 
+left:0; 
+height:100%; 
+width:100%; 
+background-image:url("1.jpeg"); 
+background-position: center 0; 
+background-repeat: no-repeat; 
+background-attachment:fixed; 
+background-size: cover; 
+-webkit-background-size: cover;/* 兼容Webkit内核浏览器如Chrome和Safari */ 
+-o-background-size: cover;/* 兼容Opera */ 
+zoom: 1;
+  		} 
+
+		td{
+			width: 326.6px;
+			height: 271px;
+			border: 1px solid black;
+		}
+    .footer p {
+      color: #7f8c8d;
+      margin: 0;
+      padding: 4px 0;
+      text-align: center;
+      background: #2d3e50;
+      font-size: 5px;
+    }
+    #login1{
+    	margin-top: 12px;
+    	margin-right: 5px;
+    }
+    #register1{
+    	margin-top: 12px;
+    	margin-right: 86px;
+    }
+    a.button{height:30px;width:50px;display:inline-block;}
+    a#login1{background-image: url(assets/i/login1.png);}
+    a#login1:active{background-image: url(assets/i/login2.png);}
+    a#register1{background-image: url(assets/i/register1.png);}
+    a#register1:active{background-image: url(assets/i/register2.png);}
+  </style>
+</head>
+<body >
+	
+<header class="am-topbar am-topbar-fixed-top">
+  <div class="am-container">
+    <h1 class="am-topbar-brand">
+      <a href="index.html"><img src="assets/i/logo.png" width="40px"/></a>
+    </h1>
+
+    <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-secondary am-show-sm-only"
+            data-am-collapse="{target: '#collapse-head'}"><span class="am-sr-only">导航切换</span> <span
+        class="am-icon-bars"></span></button>
+
+    <div class="am-collapse am-topbar-collapse" id="collapse-head">
+      <ul class="am-nav am-nav-pills am-topbar-nav">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="schoolSideIndex.html">学院周边</a></li>
+        <li class="am-active"><a href="gezipu.html">格子铺</a></li>
+        <li><a href="livefree.html">生活闲置</a></li>
+
+      </ul>
+
+      <div class="am-topbar-right" style="margin-right: -75px;">
+        <a href="register.html" class="button" id="register1"></a>
+      </div><!--注册按钮-->
+
+      <div class="am-topbar-right">
+        <a href="login.html" class="button" id="login1"></a>
+      </div><!--登陆按钮-->
+    </div>
+  </div>
+</header>
+<div style="height: 20px;"></div>	<!--空白-->
+			<div style="width: 940px;margin: 0 auto;background-color: white;">
+				<div style="height: 40px;background-color: darkgrey;padding-top: 5px;padding-left: 20px;">
+					<span style="margin-right: 20px;">全部</span><img src="assets/i/jt.png"/>
+					<span style="margin-right: 40px;margin-left: 20px;"><a href="gezipu/food.html"style="color: white;">周边美食</a></span>
+					<span style="margin-right: 40px;"><a href="gezipu/play.html"style="color: white;">休闲娱乐</a></span>
+					<span style="margin-right: 40px;"><a href="gezipu/visit.html"style="color: white;">周边游</a></span>
+					<span style="margin-right: 40px;"><a href="gezipu/home.html"style="color: white;">客栈</a></span>
+					<span style="margin-right: 40px;"><a href="gezipu/service.html"style="color: white;">生活服务</a></span>
+					<span style="margin-right: 40px;"><a href="gezipu/shop.html"style="color: white;">购物</a></span>
+					<span style="margin-right: 40px;"><a href="gezipu/blife.html"style="color: white;">靓人生活</a></span>
+				</div><!--导航条-->
+				<div style="height:20px ;"></div>
+				<div style="width: 320px;height:25px;margin-left: 36.5%;font-size: 16px;">
+					<input type="text" name="search" id="search" value=""placeholder="输入你要搜索的店铺" style="width: 70%;"/><img src="assets/i/search.png" />
+				</div><!--搜索框-->
+				<div style="height: 20px;"></div>
+				<div>
+					<table>
+						<tr>
+							<td><img src="assets/i/lp.png" style="margin-left: 1.4%;margin-top: -1px;"/>
+								<div style="height: 40px;width: 40px;background-color: white;position: relative;margin-top: -245px;margin-left: 20px;">
+								</div>
+								<p style="color: black;margin-left: 70px;margin-top: -35px;">这是店名</p>
+								<div style="background-color: darkgrey;width: 290px;height: 194px;position: relative;margin-top: 23px;margin-left: 11px;">
+								<a href="dianpu.html"><div style="background-color: white;width: 280px;height: 130px;margin-left: 5px;"></div></a><!--商店图片及介绍-->
+								<div style="background-color: white;width: 280px;height: 40px;margin-top: 15px;padding-top: 6px;margin-left: 5px;">
+									<span style="margin-left: 20px;margin-right: 50px;">销售量：</span>
+									<span>评价：</span>
+								</div>
+								</div>
+							</td><!--一个店铺-->
+							<td><img src="assets/i/lp.png" style="margin-left: 1.4%;margin-top: -1px;"/>
+								<div style="height: 40px;width: 40px;background-color: white;position: relative;margin-top: -245px;margin-left: 20px;">
+								</div>
+								<p style="color: black;margin-left: 70px;margin-top: -35px;">这是店名</p>
+								<div style="background-color: darkgrey;width: 290px;height: 194px;position: relative;margin-top: 23px;margin-left: 11px;">
+								<a href="dianpu.html"><div style="background-color: white;width: 280px;height: 130px;margin-left: 5px;"></div></a><!--商店图片及介绍-->
+								<div style="background-color: white;width: 280px;height: 40px;margin-top: 15px;padding-top: 6px;margin-left: 5px;">
+									<span style="margin-left: 20px;margin-right: 50px;">销售量：</span>
+									<span>评价：</span>
+								</div>
+								</div>
+							</td><!--一个店铺-->
+							<td><img src="assets/i/lp.png" style="margin-left: 1.4%;margin-top: -1px;"/>
+								<div style="height: 40px;width: 40px;background-color: white;position: relative;margin-top: -245px;margin-left: 20px;">
+								</div>
+								<p style="color: black;margin-left: 70px;margin-top: -35px;">这是店名</p>
+								<div style="background-color: darkgrey;width: 290px;height: 194px;position: relative;margin-top: 23px;margin-left: 11px;">
+								<a href="dianpu.html"><div style="background-color: white;width: 280px;height: 130px;margin-left: 5px;"></div></a><!--商店图片及介绍-->
+								<div style="background-color: white;width: 280px;height: 40px;margin-top: 15px;padding-top: 6px;margin-left: 5px;">
+									<span style="margin-left: 20px;margin-right: 50px;">销售量：</span>
+									<span>评价：</span>
+								</div>
+								</div>
+							</td><!--一个店铺-->
+						</tr>
+						<tr>
+							<td><img src="assets/i/lp.png" style="margin-left: 1.4%;margin-top: -1px;"/>
+								<div style="height: 40px;width: 40px;background-color: white;position: relative;margin-top: -245px;margin-left: 20px;">
+								</div>
+								<p style="color: black;margin-left: 70px;margin-top: -35px;">这是店名</p>
+								<div style="background-color: darkgrey;width: 290px;height: 194px;position: relative;margin-top: 23px;margin-left: 11px;">
+								<a href="dianpu.html"><div style="background-color: white;width: 280px;height: 130px;margin-left: 5px;"></div></a><!--商店图片及介绍-->
+								<div style="background-color: white;width: 280px;height: 40px;margin-top: 15px;padding-top: 6px;margin-left: 5px;">
+									<span style="margin-left: 20px;margin-right: 50px;">销售量：</span>
+									<span>评价：</span>
+								</div>
+								</div>
+							</td><!--一个店铺-->
+							<td><img src="assets/i/lp.png" style="margin-left: 1.4%;margin-top: -1px;"/>
+								<div style="height: 40px;width: 40px;background-color: white;position: relative;margin-top: -245px;margin-left: 20px;">
+								</div>
+								<p style="color: black;margin-left: 70px;margin-top: -35px;">这是店名</p>
+								<div style="background-color: darkgrey;width: 290px;height: 194px;position: relative;margin-top: 23px;margin-left: 11px;">
+								<a href="dianpu.html"><div style="background-color: white;width: 280px;height: 130px;margin-left: 5px;"></div></a><!--商店图片及介绍-->
+								<div style="background-color: white;width: 280px;height: 40px;margin-top: 15px;padding-top: 6px;margin-left: 5px;">
+									<span style="margin-left: 20px;margin-right: 50px;">销售量：</span>
+									<span>评价：</span>
+								</div>
+								</div>
+							</td><!--一个店铺-->
+							<td><img src="assets/i/lp.png" style="margin-left: 1.4%;margin-top: -1px;"/>
+								<div style="height: 40px;width: 40px;background-color: white;position: relative;margin-top: -245px;margin-left: 20px;">
+								</div>
+								<p style="color: black;margin-left: 70px;margin-top: -35px;">这是店名</p>
+								<div style="background-color: darkgrey;width: 290px;height: 194px;position: relative;margin-top: 23px;margin-left: 11px;">
+								<a href="dianpu.html"><div style="background-color: white;width: 280px;height: 130px;margin-left: 5px;"></div></a><!--商店图片及介绍-->
+								<div style="background-color: white;width: 280px;height: 40px;margin-top: 15px;padding-top: 6px;margin-left: 5px;">
+									<span style="margin-left: 20px;margin-right: 50px;">销售量：</span>
+									<span>评价：</span>
+								</div>
+								</div>
+							</td><!--一个店铺-->
+						</tr>
+						<tr>
+							<td><img src="assets/i/hp.png" style="margin-left: 1.4%;margin-top: -1px;"/>
+								<div style="height: 40px;width: 40px;background-color: white;position: relative;margin-top: -245px;margin-left: 20px;">
+								</div>
+								<p style="color: black;margin-left: 70px;margin-top: -35px;">这是店名</p>
+								<div style="background-color: darkgrey;width: 290px;height: 194px;position: relative;margin-top: 23px;margin-left: 11px;">
+								<a href="dianpu.html"><div style="background-color: white;width: 280px;height: 130px;margin-left: 5px;"></div></a><!--商店图片及介绍-->
+								<div style="background-color: white;width: 280px;height: 40px;margin-top: 15px;padding-top: 6px;margin-left: 5px;">
+									<span style="margin-left: 20px;margin-right: 50px;">销售量：</span>
+									<span>评价：</span>
+								</div>
+								</div>
+							</td><!--一个店铺-->
+							<td><img src="assets/i/hp.png" style="margin-left: 1.4%;margin-top: -1px;"/>
+								<div style="height: 40px;width: 40px;background-color: white;position: relative;margin-top: -245px;margin-left: 20px;">
+								</div>
+								<p style="color: black;margin-left: 70px;margin-top: -35px;">这是店名</p>
+								<div style="background-color: darkgrey;width: 290px;height: 194px;position: relative;margin-top: 23px;margin-left: 11px;">
+								<a href="dianpu.html"><div style="background-color: white;width: 280px;height: 130px;margin-left: 5px;"></div></a><!--商店图片及介绍-->
+								<div style="background-color: white;width: 280px;height: 40px;margin-top: 15px;padding-top: 6px;margin-left: 5px;">
+									<span style="margin-left: 20px;margin-right: 50px;">销售量：</span>
+									<span>评价：</span>
+								</div>
+								</div>
+							</td><!--一个店铺-->
+							<td><img src="assets/i/hp.png" style="margin-left: 1.4%;margin-top: -1px;"/>
+								<div style="height: 40px;width: 40px;background-color: white;position: relative;margin-top: -245px;margin-left: 20px;">
+								</div>
+								<p style="color: black;margin-left: 70px;margin-top: -35px;">这是店名</p>
+								<div style="background-color: darkgrey;width: 290px;height: 194px;position: relative;margin-top: 23px;margin-left: 11px;">
+								<a href="dianpu.html"><div style="background-color: white;width: 280px;height: 130px;margin-left: 5px;"></div></a><!--商店图片及介绍-->
+								<div style="background-color: white;width: 280px;height: 40px;margin-top: 15px;padding-top: 6px;margin-left: 5px;">
+									<span style="margin-left: 20px;margin-right: 50px;">销售量：</span>
+									<span>评价：</span>
+								</div>
+								</div>
+							</td><!--一个店铺-->
+						</tr>
+						<tr>
+							<td><img src="assets/i/hp.png" style="margin-left: 1.4%;margin-top: -1px;"/>
+								<div style="height: 40px;width: 40px;background-color: white;position: relative;margin-top: -245px;margin-left: 20px;">
+								</div>
+								<p style="color: black;margin-left: 70px;margin-top: -35px;">这是店名</p>
+								<div style="background-color: darkgrey;width: 290px;height: 194px;position: relative;margin-top: 23px;margin-left: 11px;">
+								<a href="dianpu.html"><div style="background-color: white;width: 280px;height: 130px;margin-left: 5px;"></div></a><!--商店图片及介绍-->
+								<div style="background-color: white;width: 280px;height: 40px;margin-top: 15px;padding-top: 6px;margin-left: 5px;">
+									<span style="margin-left: 20px;margin-right: 50px;">销售量：</span>
+									<span>评价：</span>
+								</div>
+								</div>
+							</td><!--一个店铺-->
+							<td><img src="assets/i/hp.png" style="margin-left: 1.4%;margin-top: -1px;"/>
+								<div style="height: 40px;width: 40px;background-color: white;position: relative;margin-top: -245px;margin-left: 20px;">
+								</div>
+								<p style="color: black;margin-left: 70px;margin-top: -35px;">这是店名</p>
+								<div style="background-color: darkgrey;width: 290px;height: 194px;position: relative;margin-top: 23px;margin-left: 11px;">
+								<a href="dianpu.html"><div style="background-color: white;width: 280px;height: 130px;margin-left: 5px;"></div></a><!--商店图片及介绍-->
+								<div style="background-color: white;width: 280px;height: 40px;margin-top: 15px;padding-top: 6px;margin-left: 5px;">
+									<span style="margin-left: 20px;margin-right: 50px;">销售量：</span>
+									<span>评价：</span>
+								</div>
+								</div>
+							</td><!--一个店铺-->
+							<td><img src="assets/i/hp.png" style="margin-left: 1.4%;margin-top: -1px;"/>
+								<div style="height: 40px;width: 40px;background-color: white;position: relative;margin-top: -245px;margin-left: 20px;">
+								</div>
+								<p style="color: black;margin-left: 70px;margin-top: -35px;">这是店名</p>
+								<div style="background-color: darkgrey;width: 290px;height: 194px;position: relative;margin-top: 23px;margin-left: 11px;">
+								<a href="dianpu.html"><div style="background-color: white;width: 280px;height: 130px;margin-left: 5px;"></div></a><!--商店图片及介绍-->
+								<div style="background-color: white;width: 280px;height: 40px;margin-top: 15px;padding-top: 6px;margin-left: 5px;">
+									<span style="margin-left: 20px;margin-right: 50px;">销售量：</span>
+									<span>评价：</span>
+								</div>
+								</div>
+							</td><!--一个店铺-->
+						</tr>
+						<tr>
+							<td><img src="assets/i/hp.png" style="margin-left: 1.4%;margin-top: -1px;"/>
+								<div style="height: 40px;width: 40px;background-color: white;position: relative;margin-top: -245px;margin-left: 20px;">
+								</div>
+								<p style="color: black;margin-left: 70px;margin-top: -35px;">这是店名</p>
+								<div style="background-color: darkgrey;width: 290px;height: 194px;position: relative;margin-top: 23px;margin-left: 11px;">
+								<a href="dianpu.html"><div style="background-color: white;width: 280px;height: 130px;margin-left: 5px;"></div></a><!--商店图片及介绍-->
+								<div style="background-color: white;width: 280px;height: 40px;margin-top: 15px;padding-top: 6px;margin-left: 5px;">
+									<span style="margin-left: 20px;margin-right: 50px;">销售量：</span>
+									<span>评价：</span>
+								</div>
+								</div>
+							</td><!--一个店铺-->
+							<td><img src="assets/i/hp.png" style="margin-left: 1.4%;margin-top: -1px;"/>
+								<div style="height: 40px;width: 40px;background-color: white;position: relative;margin-top: -245px;margin-left: 20px;">
+								</div>
+								<p style="color: black;margin-left: 70px;margin-top: -35px;">这是店名</p>
+								<div style="background-color: darkgrey;width: 290px;height: 194px;position: relative;margin-top: 23px;margin-left: 11px;">
+								<a href="dianpu.html"><div style="background-color: white;width: 280px;height: 130px;margin-left: 5px;"></div></a><!--商店图片及介绍-->
+								<div style="background-color: white;width: 280px;height: 40px;margin-top: 15px;padding-top: 6px;margin-left: 5px;">
+									<span style="margin-left: 20px;margin-right: 50px;">销售量：</span>
+									<span>评价：</span>
+								</div>
+								</div>
+							</td><!--一个店铺-->
+							<td><img src="assets/i/hp.png" style="margin-left: 1.4%;margin-top: -1px;"/>
+								<div style="height: 40px;width: 40px;background-color: white;position: relative;margin-top: -245px;margin-left: 20px;">
+								</div>
+								<p style="color: black;margin-left: 70px;margin-top: -35px;">这是店名</p>
+								<div style="background-color: darkgrey;width: 290px;height: 194px;position: relative;margin-top: 23px;margin-left: 11px;">
+								<a href="dianpu.html"><div style="background-color: white;width: 280px;height: 130px;margin-left: 5px;"></div></a><!--商店图片及介绍-->
+								<div style="background-color: white;width: 280px;height: 40px;margin-top: 15px;padding-top: 6px;margin-left: 5px;">
+									<span style="margin-left: 20px;margin-right: 50px;">销售量：</span>
+									<span>评价：</span>
+								</div>
+								</div>
+							</td><!--一个店铺-->
+						</tr>
+					</table>
+				</div><!--店铺页面-->
+			
+			
+			<div style="margin-left: 38%;margin-top: 2%">
+				<img src="assets/i/lj.png"/><span style="margin-left: 10px;margin-right: 4px;">1</span>
+				<span style="margin-right: 4px;">2</span>
+				<span style="margin-right: 4px;">3</span>
+				<span style="margin-right: 4px;">......</span>
+				<span style="margin-right: 4px;">23</span>
+				<span style="margin-right: 4px;">24</span>
+				<span style="margin-right: 4px;">25</span>
+				<img src="assets/i/rj.png"/>
+			</div>
+			<div style="height: 14px;"></div>
+			</div>
+			
+			
+    </div><!--内容部分-->
+<div style="height: 60px;"></div>
+<footer class="footer" style="width: 100%">
+      <p >友情链接：<a href="#">派睿工作室</a> | <a href="href="http://www.nsu.edu.cn" target="_blank"">成都东软学院</a> | <a href="#">成都东软教务系统</a> | <a href="#">微东软</a></p>
+	  <p>Adress：四川省成都市都江堰青城山镇东软大道1号  邮编 611844</p>
+	  <p>派睿科技提供技术支持 川ICP 备 06012610号</p>
+</footer>
+
+
+
+
+
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="assets/js/amazeui.min.js"></script>
+</body>
+</html>
+
